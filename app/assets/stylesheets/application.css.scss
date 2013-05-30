@@ -7,35 +7,52 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
  */
-
-
-
+@import "sassyseeds/sassyseeds"; 
 @import "compass/reset";
 @import "compass/layout/sticky-footer";
+@import "fonts";
+
+body {
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  color: #444;
+}
 
 .page {
-  border: 1px dashed red;
-  height: 100vh;
+  min-height: 540px;
   
-  .banner {
-    border: 1px solid red;
-    height: 60px;
+  .header {
+    background-color: rgba(245, 245, 255, 0.6);
+    border-bottom: 2px solid rgba(220, 220, 230, 0.4);
+    min-height: 60px;
+    padding: 10px 30px;
+    
+    .home {
+      font-family: 'MuseoSlab500Regular';
+      font-size: 36px;
+      color: #333;
+      float: left;
+    }
+    
+    .header-actions {
+      float: right;
+      position: relative;
+      top: 6px;
+      min-width: 80px;
+      @include button();
+    }
   }
   
   .main {
-    border: 1px solid black;
-
+    padding: 15px 30px;
+    line-height: 1.4;
+    min-height: 400px;
     .content {
-      border: 1px solid blue;
     }
   }
   
   .footer {
-    border: 1px solid green;
     @include sticky-footer(504px)
   }
 }

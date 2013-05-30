@@ -10,7 +10,7 @@
     <%= csrf_meta_tags %>
   </head>
   <body class="page">
-    <div class="banner">
+    <div class="header">
       <div class="home">
         <%= link_to "Codhisattvas", root_url, :class => "home" %>
       </div>
@@ -18,7 +18,7 @@
         <%= link_to "Login", '', :class => 'login' %>
       </div>
     </div>
-    <div class="content">
+    <div class="main">
       <div id="flash">
         <% if flash[:notice] %>
           <%= content_tag(:div, flash[:notice], class: "alert alert-success") %>
@@ -27,7 +27,9 @@
           <%= content_tag(:div, flash[:error], class: "alert alert-error") %>
         <% end %>
       </div>
+      <div class="content">
       <%= content_for?(:content) ? yield(:content) : yield %>
+      </div>    
     </div>
     <div class="footer">
       Footer content goes here.
