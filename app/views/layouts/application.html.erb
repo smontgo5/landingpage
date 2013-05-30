@@ -17,6 +17,16 @@
       <div class="header-actions">
         <%= link_to "Login", '', :class => 'login' %>
     </div>
+    <div id="flash">
+      <% if flash[:notice] %>
+        <%= content_tag(:div, flash[:notice], class: "alert alert-success") %>
+      <% end %>
+      <% if flash[:error] %>
+        <%= content_tag(:div, flash[:error], class: "alert alert-error") %>
+      <% end %>
+    </div>
+    
+    
     <%= yield %>
   </body>
 </html>
