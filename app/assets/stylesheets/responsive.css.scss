@@ -11,6 +11,10 @@
             left: 0;
             width: inherit !important;
             background-image: none !important;
+            
+            #flash {
+              margin-top: 220px !important;
+            }
           }
         }
       }
@@ -42,8 +46,8 @@
           }
 
           .registration {
-            a {
-              margin-top: 50px !important;
+            #flash {
+              margin-top: 10px !important;
             }
           }
         }
@@ -82,8 +86,8 @@
           }
 
           .registration {
-            a {
-              margin-top: 50px !important;
+            #flash {
+              margin-top: 40px !important;
             }
           }
         }

@@ -1,5 +1,8 @@
 <div class="banner">
   <div class="registration">
+    <div class="explanation" style="display:none">
+      <p>Codhisattvas</p>
+    </div>
     <div id="flash">
       <% if flash[:notice] %>
         <%= content_tag(:div, flash[:notice], class: "alert alert-success") %>
@@ -8,9 +11,7 @@
         <%= content_tag(:div, flash[:error], class: "alert alert-error") %>
       <% end %>
     </div>
-    <div class="explanation" style="display:none">
-      <p>Codhisattvas</p>
-    </div>
+
     <a href="https://github.com/login/oauth/authorize?client_id=cb8b04ba869ac4b628fb&">Sign up for Beta</a>
   </div>
 </div>
