@@ -1,11 +1,14 @@
 <div class="banner">
-  <div class="explanation">
-    <p>Put Money Where it Matters Most.</p>
-  </div>
   <div class="registration">
-    Codhisattvas is currently in Beta. If you are interested in contributing to the project, however, you can register easily by using Github.
-    <br />
-    <a href="https://github.com/login/oauth/authorize?client_id=cb8b04ba869ac4b628fb&">Register with Github</a>
+    <div id="flash">
+      <% if flash[:notice] %>
+        <%= content_tag(:div, flash[:notice], class: "alert alert-success") %>
+      <% end %>
+      <% if flash[:error] %>
+        <%= content_tag(:div, flash[:error], class: "alert alert-error") %>
+      <% end %>
+    </div>
+    <a href="https://github.com/login/oauth/authorize?client_id=cb8b04ba869ac4b628fb&">Sign up for Beta</a>
   </div>
 </div>
 <div class="definitions">

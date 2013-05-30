@@ -19,8 +19,8 @@
 }
 
 body {
-  font-family: 'MuseoSlab500Regular';
-  font-size: 12px;
+  font-family: OpenSansRegular;
+  font-size: 13px;
   color: #444;
 }
 
@@ -30,20 +30,34 @@ body {
   .header {
     min-height: 80px;
     padding: 10px 30px;
-
+    @include clearfix();
+    
     .home {
       position: relative;
       top: 4px;
       font-family: 'MuseoSlab500Regular';
       font-size: 48px;
-      color: #444;
+      color: #e58e38;
       float: left;
     }
     
+    .explanation {
+      float: left;
+      
+      p {
+        position: relative;
+        top: 35px;
+        left: 10px;
+        font-family: 'MuseoSlab500Regular';
+        font-size: 16px;
+        color: #444;
+      }
+    }
+
     .header-actions {
       position: relative;
       float: right;
-      top: 22px;
+      top: 26px;
       min-width: 80px;
       @include button();
     }
@@ -65,22 +79,6 @@ body {
         background-height: 400px;
         color: #CCC;
         
-        .explanation {
-          position: absolute;
-          left: 50px;
-          width: 650px;
-          padding: 25px 5px;
-          
-          p {
-            position: absolute;
-            top: 350px;
-            left: 140px;
-            font-family: 'MuseoSlab500Regular';
-            font-size: 14px;
-            color: #BBB;
-          }
-        }
-        
         .registration {
           right: 0;
           padding: 50px 20px;
@@ -91,51 +89,47 @@ body {
           @include noise;
           
           a {
-            margin-top: 180px;
+            position: relative;
+            top: 230px;
             font-family: 'MuseoSlab500Regular';
             font-size: 18px;
             min-width: 120px;
             @include button();
-            
           }
         }
       }
 
       .definitions {
         padding: 25px 30px 0 30px;
-        
+
         .product-definition {
-          font-family: 'MuseoSlab500Regular';
-          font-size: 13px;
           padding-bottom: 20px;
           border-bottom: 1px solid #AAA;
+          font-family: OpenSansSemibold;
+          font-size: 16px;
+          text-align: center;
         }
         
         .atoms {
           border-top: 1px solid #FFF;
           
           .atom {
-            width: 30%;
+            width: 33%;
             display: inline-block;
             vertical-align: top;
             margin-top: 25px;
-            margin-right: 3%;
-            min-height: 200px;
+            padding: 0 3%;
+            min-height: 120px;
             
             .title {
-              font-size: 15px;
+              font-size: 18px;
               padding: 10px;
               text-align: center;
               color: rgb(60, 120, 120);
             }
 
             .body {
-              padding: 10px;
               text-align: center;
-            }
-
-            &:last-child {
-              margin-right: none;
             }
           }
         }
