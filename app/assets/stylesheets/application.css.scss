@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: OpenSansRegular;
+  font-family: 'MuseoSlab500Regular';
   font-size: 12px;
   color: #444;
 }
@@ -63,7 +63,6 @@ body {
         background-repeat: no-repeat;
         background-width: 600px;
         background-height: 400px;
-        margin-bottom: 25px;
         color: #CCC;
         
         .explanation {
@@ -103,10 +102,10 @@ body {
       }
 
       .definitions {
-        padding: 0px 30px;
+        padding: 25px 30px 0 30px;
         
         .product-definition {
-          font-family: OpenSansSemibold;
+          font-family: 'MuseoSlab500Regular';
           font-size: 13px;
           padding-bottom: 20px;
           border-bottom: 1px solid #AAA;
@@ -114,7 +113,6 @@ body {
         
         .atoms {
           border-top: 1px solid #FFF;
-          margin: 0 5%;
           
           .atom {
             width: 30%;
