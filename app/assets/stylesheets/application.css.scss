@@ -14,3 +14,28 @@
 
 
 @import "compass/reset"
+@import "compass/reset";
+@import "compass/layout/sticky-footer";
+
+.page {
+  border: 1px dashed red;
+  height: 100vh;
+  
+  .banner {
+    border: 1px solid red;
+    height: 60px;
+  }
+  
+  .main {
+    border: 1px solid black;
+
+    .content {
+      border: 1px solid blue;
+    }
+  }
+  
+  .footer {
+    border: 1px solid green;
+    @include sticky-footer(504px)
+  }
+}

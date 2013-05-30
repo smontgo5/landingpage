@@ -4,20 +4,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Codhisattvas</title>
+    <title>BetaSnapCiCom</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
-    <div id="header">
+  <body class="page">
+    <div class="banner">
       <div class="home">
         <%= link_to "Codhisattvas", root_url, :class => "home" %>
       </div>
       <div class="header-actions">
         <%= link_to "Login", '', :class => 'login' %>
+      </div>
     </div>
-    <div id="content">
+    <div class="content">
       <div id="flash">
         <% if flash[:notice] %>
           <%= content_tag(:div, flash[:notice], class: "alert alert-success") %>
@@ -27,6 +28,9 @@
         <% end %>
       </div>
       <%= content_for?(:content) ? yield(:content) : yield %>
+    </div>
+    <div class="footer">
+      Footer content goes here.
     </div>
   </body>
 </html>
