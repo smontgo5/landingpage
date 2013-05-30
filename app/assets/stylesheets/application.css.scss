@@ -28,12 +28,12 @@ body {
   min-height: 540px;
   
   .header {
-    min-height: 100px;
+    min-height: 80px;
     padding: 10px 30px;
 
     .home {
       position: relative;
-      top: 6px;
+      top: 4px;
       font-family: 'MuseoSlab500Regular';
       font-size: 48px;
       color: #444;
@@ -43,7 +43,7 @@ body {
     .header-actions {
       position: relative;
       float: right;
-      top: 26px;
+      top: 22px;
       min-width: 80px;
       @include button();
     }
@@ -51,49 +51,48 @@ body {
   
   .main {
     line-height: 1.4;
-    min-height: 400px;
+    min-height: 380px;
 
     .content {
       .banner {
         position: relative;
-        height: 400px;
+        height: 380px;
         background-color: rgb(39, 59, 69);
         background-image: url('LandingPageImage.png');
-        background-position: 20% 50%;
+        background-position: 3% 50%;
         background-repeat: no-repeat;
         background-width: 600px;
         background-height: 400px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         color: #CCC;
         
         .explanation {
-          left: 50px;
-          padding: 25px 5px;
           position: absolute;
+          left: 50px;
           width: 650px;
+          padding: 25px 5px;
           
           p {
             position: absolute;
+            top: 350px;
+            left: 140px;
             font-family: 'MuseoSlab500Regular';
             font-size: 14px;
-            position: absolute;
-            top: 350px;
-            left: 240px;
             color: #BBB;
           }
         }
         
         .registration {
           right: 0;
-          padding-top: 50px;
+          padding: 50px 20px;
           position: absolute;
           width: 300px;
-          height: 400px;
+          height: 380px;
           text-align: center;
           @include noise;
           
           a {
-            margin-top: 250px;
+            margin-top: 180px;
             font-family: 'MuseoSlab500Regular';
             font-size: 18px;
             min-width: 120px;
@@ -104,11 +103,43 @@ body {
       }
 
       .definitions {
-        padding: 15px 30px;
+        padding: 0px 30px;
         
         .product-definition {
           font-family: OpenSansSemibold;
           font-size: 13px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #AAA;
+        }
+        
+        .atoms {
+          border-top: 1px solid #FFF;
+          margin: 0 5%;
+          
+          .atom {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 25px;
+            margin-right: 3%;
+            min-height: 200px;
+            
+            .title {
+              font-size: 15px;
+              padding: 10px;
+              text-align: center;
+              color: rgb(60, 120, 120);
+            }
+
+            .body {
+              padding: 10px;
+              text-align: center;
+            }
+
+            &:last-child {
+              margin-right: none;
+            }
+          }
         }
       }
     }
