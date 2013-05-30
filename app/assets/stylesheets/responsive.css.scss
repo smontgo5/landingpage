@@ -1,0 +1,93 @@
+@media only screen and (max-width : 1060px) {
+  .page {
+    .main {
+      .content {
+        .banner {
+          width: 100%;
+          height: 375px !important;
+          background-position: 50% 10% !important;
+
+          .registration {
+            left: 0;
+            width: inherit !important;
+            background-image: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 750px) {
+  .page {
+    .header {
+      .explanation {
+        display: none;
+      }
+    }
+
+    .main {
+      .content {
+        .banner {
+          background-image: none !important;
+
+          .explanation {
+            display: block !important;
+            
+            p {
+              font-family: 'MuseoSlab500Regular';
+              font-size: 48px;
+              color: #CCC;
+            }
+          }
+
+          .registration {
+            a {
+              margin-top: 50px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 660px) {
+  .page {
+    .main {
+      .content {
+        .definitions {
+          .atoms {
+            .atom {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 580px) {
+  .page {
+    .main {
+      .content {
+        .banner {
+          height: 275px !important;
+          
+          .explanation {
+            p {
+              font-size: 24px;
+            }
+          }
+
+          .registration {
+            a {
+              margin-top: 50px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
